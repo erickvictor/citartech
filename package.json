@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API criada para backend Citar.tech jobs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "test:model": "jest --testPathPattern model_test",
+    "test:service": "jest --testPathPattern service_test",
+    "test:app": "jest --testPathPattern app_test"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Erick Bernardo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "sinon": "^7.3.1",
+    "supertest": "^4.0.2"
+  }
+}
